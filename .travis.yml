@@ -1,11 +1,19 @@
 language: python
 python:
-    - "2.6"
-    - "2.7"
-    - "3.4"
-    - "3.5"
-    - "3.6"
-    - "3.7-dev" #3.7 development branch
+  - "2.6"
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7-dev" #3.7 development branch
     
 #command to run tests
 script: "python simple_tests.py"
+
+notifications:
+  email:
+    recipients:
+      - one@example.com
+      - other@example.com
+    on_success: never #default: change
+    on_failure: always #default: always
