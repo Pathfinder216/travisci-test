@@ -13,7 +13,6 @@ script: "python simple_tests.py"
 notifications:
   email:
     recipients:
-      - one@example.com
-      - other@example.com
+      - benno.green@gmail.com
     on_success: never #default: change
     on_failure: always #default: always
